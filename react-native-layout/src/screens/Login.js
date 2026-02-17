@@ -1,7 +1,7 @@
 import { View, StyleSheet, Image, Text, TextInput, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-export default function Login() {
+export default function Login({navigation}) {
   return (
     <View style={styles.container}>
       
@@ -32,7 +32,7 @@ export default function Login() {
 
         <View style={styles.signUp}>
           <Text>Don't have an account yet? </Text>
-          <Text style={styles.signUpLink}>Sign up!</Text>
+          <Text style={styles.signUpLink} onPress={() => navigation.navigate('Signup')}>Sign up!</Text>
         </View>
       </View>
     </View>
