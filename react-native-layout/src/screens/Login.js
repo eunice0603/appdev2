@@ -8,7 +8,7 @@ export default function Login({navigation}) {
       {/* Header */}
       <View style={styles.header}>
         <Image source={require('../assets/login.png')} style={styles.logo} />
-        <Text style={styles.title}> Welcome! </Text>
+        <Text style={styles.title}> Log in to your account. </Text>
       </View>
 
       {/* Content */}
