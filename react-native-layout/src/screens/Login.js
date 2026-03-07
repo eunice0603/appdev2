@@ -26,8 +26,8 @@ export default function Login({navigation}) {
 
       {/* Footer */}
       <View style={styles.footer}>
-        <TouchableOpacity style={styles.buttonContainer}>
-          <Text style={styles.buttonText}>Log In</Text>
+        <TouchableOpacity style={styles.buttonContainer}  onPress={() => navigation.navigate('Todo')}>
+          <Text style={styles.buttonText}>Log in.</Text>
         </TouchableOpacity>
 
         <View style={styles.signUp}>
